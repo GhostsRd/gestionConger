@@ -35,7 +35,7 @@
                 <th  class="border-0 ">Salaire</th>
                 <th  class="border-0 ">Total conger</th>
                 <th  class="border-0 ">Conger disponible</th>
-                <th  class="border-0 " colspan="2">Action</th>
+                <th  class="border-0 " colspan="3">Action</th>
 
                 
             </thead>
@@ -54,6 +54,9 @@
                         </td>
                         <td  class="border-0 bg-white">
                             <a href="{{url('/employer/delete',$employer->id)}}" class="nav-link text-primary">delete</a>    
+                        </td>
+                        <td  class="border-0 bg-white">
+                            <a href="{{url('/fiche',$employer->id)}}" class="nav-link text-primary">fiche</a>    
                         </td>
 
                     </tr>

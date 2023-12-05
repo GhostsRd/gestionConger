@@ -42,6 +42,7 @@ class Employer extends Controller
             'prenom'=>$request->prenom,
             'poste'=>$request->poste,
             'salaire'=>$request->salaire,
+            'conger_disponible'=>30,
 
         ]);
         return redirect('/employer')->with('notif',"Ajout avec succéss");

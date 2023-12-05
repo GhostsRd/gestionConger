@@ -39,6 +39,9 @@ Route::get('/conger', [App\Http\Controllers\conger\Conger::class, 'index']);
 Route::post('/conger/ajout', [App\Http\Controllers\conger\Conger::class, 'ajout']);
 Route::get('/conger/delete/{id}', [App\Http\Controllers\conger\Conger::class, 'remove']);
 
+Route::get('/fiche', [App\Http\Controllers\fiche\Fiche::class, 'index']);
+Route::get('/fiche/{id}', [App\Http\Controllers\fiche\Fiche::class, 'fiche']);
+
 
 
 Auth::routes();
