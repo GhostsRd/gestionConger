@@ -36,8 +36,9 @@ jobs:
 
       - name: 📦 Install dependencies
         run: |
-          composer install --prefer-dist --no-progress
           composer update
+          composer install --prefer-dist --no-progress
+          
 
       - name: ⚙️ Copy .env
         run: cp .env .env.example
