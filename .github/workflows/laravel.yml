@@ -40,7 +40,7 @@ jobs:
           composer update
 
       - name: ⚙️ Copy .env
-        run: touch .env
+        run: cp .env .env.example
 
       - name: 🔑 Generate app key
         run: php artisan key:generate
